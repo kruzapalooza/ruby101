@@ -51,31 +51,12 @@ class Dinosaur # ANSWER: add @ character to make variables instance member varia
     @meals_eaten_count = 10
   end
 
-  def type=(new_type) # add "new_type" to this line, or @type will not get value passed to it
-    @type = new_type  # where does this new_type variable come from? fix this method!
-  end
+attr_accessor :type
 
-  def type # ANSWER: spelling error 'tipe'. this is the "reader" function.
-    @type # this is returned.
-  end
+attr_accessor :favorite_snack
 
+attr_accessor :meals_eaten_count
 
-  def favorite_snack=(fav_snack) # syntax: remove = sign. this is the "writer function."
-    @favorite_snack = fav_snack 
-  end
-
-  def favorite_snack
-    @favorite_snack # return value. this is the "reader" function.
-  end
-
-
-  def meals_eaten_count=(num)
-    @meals_eaten_count = num
-  end
-
-  def meals_eaten_count
-    @meals_eaten_count
-  end
 
   def snack # change 2 to 1
     self.meals_eaten_count += 1
